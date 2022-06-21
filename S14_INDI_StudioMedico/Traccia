@@ -1,0 +1,36 @@
+CARTELLA CLINICA ELETTRONICA
+
+Siamo una clinica poliambulatoriale che effettua visite specialistiche ed esami diagnostici in convenzione con 
+il Sistema Sanitario Nazionale.
+Fino a questo momento ci siamo avvalsi di un software desktop per la gestione degli appuntamenti medici, 
+mentre le cartelle cliniche vengono compilate in modalità cartacea dal personale medico e conservate nel 
+nostro archivio. Vista la nostra crescita, e la sempre maggiore importanza della digitalizzazione nel mondo 
+della sanità, abbiamo deciso di modernizzarci e dotarci di un software sviluppato internamente per la gestione 
+degli appuntamenti e delle cartelle cliniche.
+
+Il software dovrà essere utilizzato da:
+personale di segreteria, che si occupa di:
+registrare pazienti;
+registrare dottori e dottoresse;
+organizzare il calendario degli ambulatori;
+gestire le prenotazioni per le visite;
+personale medico, che ha bisogno di:
+visualizzare il proprio calendario e gli appuntamenti futuri;
+inserire referti medici.
+
+Da una valutazione preliminare abbiamo deciso che il nostro software avrà un interfaccia web, 
+utilizzabile da browser, senza che sia necessario installare alcuna applicazione desktop: 
+in questo modo ridurremo la manutenzione sui computer nei nostri ambulatori, 
+e il personale medico potrà tranquillamente utilizzare il proprio computer per lavorare. 
+Inoltre in futuro ci piacerebbe sviluppare anche l’applicazione mobile e tablet, 
+in modo che il nostro personale possa comodamente interagire con il sistema senza essere di fronte a un computer.
+
+Per questo motivo intendiamo iniziare con la realizzazione di un API in grado di interagire con il nostro database, 
+a cui in seguito poter collegare un frontend web-based e le applicazioni mobile.
+
+Per la realizzazione del backend abbiamo optato per la tecnologia Java, in quanto nel nostro ufficio IT 
+lavorano alcuni sviluppatori Java e utilizziamo già Java per altre applicazioni informatiche.
+Il nostro software gestionale utilizza il protocollo RESTful, quindi desideriamo che anche questo applicativo 
+utilizzi tale protocollo, per facilitare eventuali integrazioni.
+Come database invece intendiamo utilizzare MySQL, in quanto il nostro database pazienti è un MySQL e 
+desideriamo mantenere tale tecnologia per facilitare la migrazione dei dati.
