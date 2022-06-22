@@ -6,6 +6,9 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.MappedSuperclass;
 
+import lombok.Data;
+
+@Data
 @MappedSuperclass
 public abstract class Persona {
 
@@ -15,5 +18,8 @@ public abstract class Persona {
 	private LocalDate dataDiNascita;
 	@Enumerated(EnumType.STRING)
 	private Genere genere;
+	private String indirizzo;
+	private String email;
+
 	
 }

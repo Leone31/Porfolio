@@ -24,7 +24,9 @@ public class Medico extends Persona {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id; 
+	
 	private String specialistica;
+	
 	
 	@OneToOne(mappedBy = "medico")
 	private Calendario calendario;
