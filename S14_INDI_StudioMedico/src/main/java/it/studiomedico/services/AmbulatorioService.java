@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
 import it.studiomedico.dto.AmbulatorioDTO;
 import it.studiomedico.model.Ambulatorio;
+import it.studiomedico.model.Paziente;
 import it.studiomedico.repository.AmbulatorioRepository;
 
 @Service
@@ -43,11 +44,11 @@ public class AmbulatorioService {
 		ar.deleteById(nome);
 	}
 	
-	public List<Ambulatorio> mostraTutti() throws NoSuchElementException {
+	public List<Ambulatorio> findAll() {
 		if(ar.findAll().isEmpty()) {
-			throw new NoSuchElementException ("LISTA VUOTA!");
+			throw new NoSuchElementException("LISTA VUOTA!");
 		}
-		return (List<Ambulatorio>) ar.findAll();
+		return ar.findAll();
 	}
 	
 	

@@ -16,8 +16,7 @@ import lombok.NoArgsConstructor;
 public class Paziente extends Persona{
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private String codiceFiscale;
 	
 	@OneToOne(mappedBy = "paziente")
 	private Referto referto;
