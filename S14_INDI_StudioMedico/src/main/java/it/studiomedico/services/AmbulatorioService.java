@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
 import it.studiomedico.dto.AmbulatorioDTO;
 import it.studiomedico.model.Ambulatorio;
-import it.studiomedico.model.Paziente;
 import it.studiomedico.repository.AmbulatorioRepository;
 
 @Service
